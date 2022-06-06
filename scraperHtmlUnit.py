@@ -4,10 +4,14 @@ import time
 import sys
 import chromedriver_autoinstaller
 
+
+print ("Mise à jour chrome driver")
 chromedriver_autoinstaller.install()
 
+time.sleep(2)
+
 if(len(sys.argv) > 2):
-    print("Aucun arguement détectéé")
+    print("Aucun arguement détecté")
 
 chrome_options = Options()  
 chrome_options.add_argument("--headless")  

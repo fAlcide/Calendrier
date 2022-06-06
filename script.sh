@@ -12,6 +12,6 @@ python3 scraperHtmlUnit.py $PASSWORD;
 
 mv *.ics File/calendar.ics;
 
-lftp sftp://u97148976:$PASSWORD@access781503272.webspace-data.io:/Calendar_UPHF/ -e "put File/calendar.ics; bye" 
+lftp sftp://u97148976:$PASSWORD@access781503272.webspace-data.io:/Calendar_UPHF/ -e "put File/calendar.ics; bye" || echo "⚠ Fail ⚠" && exit
 
-echo "Calendrier upload";
+echo "<<>><<>><<>><<>><<>><<>><<>> Calendrier upload <<>><<>><<>><<>><<>><<>><<>><<>>";
