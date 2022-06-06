@@ -2,8 +2,11 @@ from selenium.webdriver.chrome.options import Options
 from selenium import webdriver
 import time
 import sys
+import chromedriver_autoinstaller
 
-if(len(sys.argv) > 1):
+chromedriver_autoinstaller.install()
+
+if(len(sys.argv) > 2):
     print("Aucun arguement détectéé")
 
 chrome_options = Options()  

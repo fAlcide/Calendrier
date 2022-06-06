@@ -4,7 +4,7 @@ if test -f "File/calendar.ics"; then
     rm -r File/calendar.ics;
 fi
 
-echo "Mot de passe UPF et SFTP (++)";
+echo "Mot de passe UPF et SFTP (==)";
 
 read -s PASSWORD;
 
